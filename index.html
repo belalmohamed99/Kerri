@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerri</title>
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- bootstrap link  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- main link css  -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#spy-links">
+
+
+
+    <!-- start nav bar  -->
+    <nav class="navbar navbar-expand-lg  fixed-top">
+        <div class="container">
+            <a class="navbar-brand fs-2 fw-bolder" href="index.html">Kerri</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse spy-links" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link home active" aria-current="page" href="#home"><span>Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"><span>About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#client"><span>Client</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio"><span>Portfolio</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog"><span>Blog</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><span>Contact</span></a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- end nav bar  -->
+
+
+    <!-- start section header  -->
+    <section class="vh-100 header position-relative" id="home">
+        <div class="container d-flex justify-content-center align-items-center vh-100">
+            <header class="text-white text-center text-header">
+                <h2>Welcome</h2>
+                <h1 class="font-Montserrat my-2">I am <span class="position-relative"> </span> </h1>
+                <p class="w-75 mx-auto">It is a long established fact that a reader will be of a page when established
+                    fact looking at its layout.</p>
+                <a download href="imgs/about.jpg" class="btn btn-outline-light rounded-pill py-3 px-5">Download CV</a>
+            </header>
+        </div>
+        <div class="scroll-header position-absolute rounded-pill"></div>
+        <div class="spinner-header position-fixed p-2  rounded-2 z-3"><i class="fa-solid fa-gear fa-spin"></i></div>
+    </section>
+    <!-- end section header  -->
+
+
+    <!-- start about section  -->
+    <section class="py-5" id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 img-about">
+                    <img class="img-thumbnail border-2 rounded-0" src="imgs/about.jpg" alt="">
+                </div>
+
+                <div class="col-lg-6 text-about mt-3 ">
+                    <header class="header-about-text font-Montserrat mt-3">
+                        <h2 class="mb-4"><Span class="fw-bolder">About</Span> Me</h2>
+                        <h3 class=" mb-4">Hello! <span class="text-uppercase">I'M Kerri Deo.</span></h3>
+                    </header>
+
+                    <p class="mb-4">It is a long established fact that a reader will be distracted by the readable
+                        content of a page
+                        when looking at its layout.
+                    </p>
+
+                    <p class="mb-4">
+                        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                        opposed to using 'Content here, content here', making it look like readable English.
+                    </p>
+
+                    <p class="mb-4">There are many variations of passages of Lorem Ipsum available, but the majority
+                        have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable.
+                    </p>
+
+                    <div class="icons-about-sec d-flex justify-content-evenly w-50">
+                        <p class="px-2 py-1 rounded-circle"><i class="fa-brands fa-facebook"></i></p>
+                        <p class="px-2 py-1 rounded-circle"><i class="fa-brands fa-linkedin-in"></i></p>
+                        <p class="px-2 py-1 rounded-circle"><i class="fa-brands fa-twitter"></i></p>
+                        <p class="px-2 py-1 rounded-circle"><i class="fa-brands fa-instagram"></i></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end about section  -->
+
+    <!-- start client section  -->
+    <section class="client-section py-4" id="client">
+        <div class="container">
+            <header class="header-of-every-sec mx-auto text-center">
+                <h2 class="font-Montserrat ">Our <span class="fw-bolder">Client</span></h2>
+                <p>It is a long established fact that a reader will be of a page when established fact looking at its
+                    layout. </p>
+            </header>
+
+            <div class="slider-clients py-5">
+                
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+
+                            <p class="icon-slider text-center">
+                                <i class="fas fa-quote-right fs-1"></i>
+                            </p>
+
+                            <div class="slider-img w-50 mx-auto d-flex justify-content-center">
+
+                                <img src="imgs/testi-1.jpg" class="img-fluid rounded-circle" alt="testi 1">
+                            </div>
+                            <div class="slider-text mx-auto text-center  mt-3">
+
+                                <p class="fst-italic">" The point of using Lorem Ipsum is that it has a more-or-less
+                                    normal distribution of
+                                    letters, as opposed to using 'Content here."</p>
+                                <h5>- Ebony <span class="fw-bolder">verty,</span> </h5>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <p class="icon-slider text-center">
+                                <i class="fas fa-quote-right fs-1"></i>
+                            </p>
+                            <div class="slider-img w-50 mx-auto d-flex justify-content-center">
+                                <img src="imgs/testi-2.jpg" class="img-fluid rounded-circle" alt="testi 2">
+                            </div>
+                            <div class="slider-text mx-auto text-center  mt-3">
+
+                                <p class="fst-italic">" The point of using Lorem Ipsum is that it has a more-or-less
+                                    normal distribution of
+                                    letters, as opposed to using 'Content here."</p>
+                                <h5>- Ebony <span class="fw-bolder">verty,</span> </h5>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <p class="icon-slider text-center">
+                                <i class="fas fa-quote-right fs-1"></i>
+                            </p>
+                            <div class="slider-img w-50 mx-auto d-flex justify-content-center">
+                                <img src="imgs/testi-3.jpg" class="img-fluid rounded-circle" alt="testi 3">
+                            </div>
+                            <div class="slider-text mx-auto text-center  mt-3">
+
+                                <p class="fst-italic">" The point of using Lorem Ipsum is that it has a more-or-less
+                                    normal distribution of
+                                    letters, as opposed to using 'Content here."</p>
+                                <h5>- Ebony <span class="fw-bolder">verty,</span> </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-indicators position-static">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end client section  -->
+
+
+    <!-- start portolio section  -->
+    <section class="portfolio-section py-5" id="portfolio">
+        <div class="container">
+            <header class="header-of-every-sec mx-auto text-center">
+                <h2 class="font-Montserrat ">Our <span class="fw-bolder">Works</span></h2>
+                <p>It is a long established fact that a reader will be of a page when established fact looking at its
+                    layout. </p>
+            </header>
+
+            <div class="taps-portfolio pt-5">
+
+                <ul class="nav nav-pills mb-3  mx-auto justify-content-center" id="pills-tab" role="tablist">
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#All"
+                            type="button" role="tab" aria-controls="All" aria-selected="true">All</button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#seo"
+                            type="button" role="tab" aria-controls="seo" aria-selected="false">Seo</button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#webdesign" type="button" role="tab" aria-controls="webdesign"
+                            aria-selected="false">Web Design</button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#work"
+                            type="button" role="tab" aria-controls="webdesign" aria-selected="false">Web Design</button>
+                    </li>
+
+                </ul>
+
+                <div class="tab-content" id="pills-tabContent">
+
+
+                    <div class="tab-pane fade show active" id="All" role="tabpanel" aria-labelledby="pills-home-tab"
+                        tabindex="0">
+                        <div class="row py-5">
+
+                            <div class="card-portfolio col-md-6 col-lg-4">
+                                <figure class="position-relative">
+                                    <img class="img-fluid" src="imgs/1.jpg" alt="1.jpg">
+                                    <figcaption
+                                        class="position-absolute d-flex  align-items-center justify-content-center">
+                                        <div class="card-text text-center position-absolute translate-middle-y">
+                                            <h3>category</h3>
+                                            <p>project title</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="card-portfolio col-md-6 col-lg-4">
+                                <figure class="position-relative">
+                                    <img class="img-fluid" src="imgs/2.jpg" alt="2.jpg">
+                                    <figcaption
+                                        class="position-absolute d-flex  align-items-center justify-content-center">
+                                        <div class="card-text text-center position-absolute translate-middle-y">
+                                            <h3>category</h3>
+                                            <p>project title</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="card-portfolio col-md-6 col-lg-4">
+                                <figure class="position-relative">
+                                    <img class="img-fluid" src="imgs/3.jpg" alt="3.jpg">
+                                    <figcaption
+                                        class="position-absolute d-flex  align-items-center justify-content-center">
+                                        <div class="card-text text-center position-absolute translate-middle-y">
+                                            <h3>category</h3>
+                                            <p>project title</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="card-portfolio col-md-6 col-lg-4">
+                                <figure class="position-relative">
+                                    <img class="img-fluid" src="imgs/4.jpg" alt="4.jpg">
+                                    <figcaption
+                                        class="position-absolute d-flex  align-items-center justify-content-center">
+                                        <div class="card-text text-center position-absolute translate-middle-y">
+                                            <h3>category</h3>
+                                            <p>project title</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="card-portfolio col-md-6 col-lg-4">
+                                <figure class="position-relative">
+                                    <img class="img-fluid" src="imgs/5.jpg" alt="5.jpg">
+                                    <figcaption
+                                        class="position-absolute d-flex  align-items-center justify-content-center">
+                                        <div class="card-text text-center position-absolute translate-middle-y">
+                                            <h3>category</h3>
+                                            <p>project title</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="card-portfolio col-md-6 col-lg-4">
+                                <figure class="position-relative">
+                                    <img class="img-fluid" src="imgs/6.jpg" alt="6.jpg">
+                                    <figcaption
+                                        class="position-absolute d-flex  align-items-center justify-content-center">
+                                        <div class="card-text text-center position-absolute translate-middle-y">
+                                            <h3>category</h3>
+                                            <p>project title</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="seo" role="tabpanel" aria-labelledby="pills-profile-tab"
+                        tabindex="0">
+
+                        <div class="row py-5">
+
+                            <div class="card-portfolio col-md-6 col-lg-4">
+                                <figure class="position-relative">
+                                    <img class="img-fluid" src="imgs/1.jpg" alt="1.jpg">
+                                    <figcaption
+                                        class="position-absolute d-flex  align-items-center justify-content-center">
+                                        <div class="card-text text-center position-absolute translate-middle-y">
+                                            <h3>category</h3>
+                                            <p>project title</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="card-portfolio col-md-6 col-lg-4">
+                                <figure class="position-relative">
+                                    <img class="img-fluid" src="imgs/2.jpg" alt="2.jpg">
+                                    <figcaption
+                                        class="position-absolute d-flex  align-items-center justify-content-center">
+                                        <div class="card-text text-center position-absolute translate-middle-y">
+                                            <h3>category</h3>
+                                            <p>project title</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="card-portfolio col-md-6 col-lg-4">
+                                <figure class="position-relative">
+                                    <img class="img-fluid" src="imgs/3.jpg" alt="3.jpg">
+                                    <figcaption
+                                        class="position-absolute d-flex  align-items-center justify-content-center">
+                                        <div class="card-text text-center position-absolute translate-middle-y">
+                                            <h3>category</h3>
+                                            <p>project title</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="webdesign" role="tabpanel" aria-labelledby="pills-contact-tab"
+                        tabindex="0">
+
+                        <div class="row py-5">
+
+                            <div class="card-portfolio col-md-6 col-lg-4">
+                                <figure class="position-relative">
+                                    <img class="img-fluid" src="imgs/1.jpg" alt="1.jpg">
+                                    <figcaption
+                                        class="position-absolute d-flex  align-items-center justify-content-center">
+                                        <div class="card-text text-center position-absolute translate-middle-y">
+                                            <h3>category</h3>
+                                            <p>project title</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="card-portfolio col-md-6 col-lg-4">
+                                <figure class="position-relative">
+                                    <img class="img-fluid" src="imgs/2.jpg" alt="2.jpg">
+                                    <figcaption
+                                        class="position-absolute d-flex  align-items-center justify-content-center">
+                                        <div class="card-text text-center position-absolute translate-middle-y">
+                                            <h3>category</h3>
+                                            <p>project title</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="card-portfolio col-md-6 col-lg-4">
+                                <figure class="position-relative">
+                                    <img class="img-fluid" src="imgs/3.jpg" alt="3.jpg">
+                                    <figcaption
+                                        class="position-absolute d-flex  align-items-center justify-content-center">
+                                        <div class="card-text text-center position-absolute translate-middle-y">
+                                            <h3>category</h3>
+                                            <p>project title</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="card-portfolio col-md-6 col-lg-4">
+                                <figure class="position-relative">
+                                    <img class="img-fluid" src="imgs/4.jpg" alt="4.jpg">
+                                    <figcaption
+                                        class="position-absolute d-flex  align-items-center justify-content-center">
+                                        <div class="card-text text-center position-absolute translate-middle-y">
+                                            <h3>category</h3>
+                                            <p>project title</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="work" role="tabpanel" aria-labelledby="pills-contact-tab"
+                        tabindex="0">
+
+                        <div class="row py-5">
+
+                            <div class="card-portfolio col-md-6 col-lg-4">
+                                <figure class="position-relative">
+                                    <img class="img-fluid" src="imgs/1.jpg" alt="1.jpg">
+                                    <figcaption
+                                        class="position-absolute d-flex  align-items-center justify-content-center">
+                                        <div class="card-text text-center position-absolute translate-middle-y">
+                                            <h3>category</h3>
+                                            <p>project title</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="card-portfolio col-md-6 col-lg-4">
+                                <figure class="position-relative">
+                                    <img class="img-fluid" src="imgs/2.jpg" alt="2.jpg">
+                                    <figcaption
+                                        class="position-absolute d-flex  align-items-center justify-content-center">
+                                        <div class="card-text text-center position-absolute translate-middle-y">
+                                            <h3>category</h3>
+                                            <p>project title</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="card-portfolio col-md-6 col-lg-4">
+                                <figure class="position-relative">
+                                    <img class="img-fluid" src="imgs/3.jpg" alt="3.jpg">
+                                    <figcaption
+                                        class="position-absolute d-flex  align-items-center justify-content-center">
+                                        <div class="card-text text-center position-absolute translate-middle-y">
+                                            <h3>category</h3>
+                                            <p>project title</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="card-portfolio col-md-6 col-lg-4">
+                                <figure class="position-relative">
+                                    <img class="img-fluid" src="imgs/4.jpg" alt="4.jpg">
+                                    <figcaption
+                                        class="position-absolute d-flex  align-items-center justify-content-center">
+                                        <div class="card-text text-center position-absolute translate-middle-y">
+                                            <h3>category</h3>
+                                            <p>project title</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </section>
+    <!-- end portolio section  -->
+
+    <!-- start blog section  -->
+
+    <section class="py-5 blog-section" id="blog">
+        <div class="container">
+            <header class="header-of-every-sec mx-auto text-center">
+                <h2 class="font-Montserrat ">Our <span class="fw-bolder">Blog</span></h2>
+                <p>It is a long established fact that a reader will be of a page when established fact looking at its
+                    layout. </p>
+            </header>
+
+            <div class="row pt-4 justify-content-center gy-3">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="img-fluid" src="imgs/blog-1.jpg" alt="blog 1">
+                        </div>
+                        <div class="card-body">
+                          <h4 class="card-title font-Montserrat fw-bolder my-2">There are many variations</h4>
+                          <h5 class="my-2">11 March 2018 <span>By Kerri</span></h5>
+                          <p class="card-text my-3">Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies
+
+                          </p>
+                        </div>
+                        <div class="card-footer text-body-secondary py-2">
+                          <a class="text-decoration-none" href="#">Read More...</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="img-fluid" src="imgs/blog-2.jpg" alt="blog 2">
+                        </div>
+                        <div class="card-body">
+                          <h4 class="card-title font-Montserrat fw-bolder my-2">There are many variations</h4>
+                          <h5 class="my-2">11 March 2018 <span>By Kerri</span></h5>
+                          <p class="card-text my-3">Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies
+
+                          </p>
+                        </div>
+                        <div class="card-footer text-body-secondary py-2">
+                          <a class="text-decoration-none" href="#">Read More...</a>
+                        </div>
+                      </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="img-fluid" src="imgs/blog-3.jpg" alt="blog 3">
+                        </div>
+                        <div class="card-body">
+                          <h4 class="card-title font-Montserrat fw-bolder my-2">There are many variations</h4>
+                          <h5 class="my-2">11 March 2018 <span>By Kerri</span></h5>
+                          <p class="card-text my-3">Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies
+
+                          </p>
+                        </div>
+                        <div class="card-footer text-body-secondary py-2">
+                          <a class="text-decoration-none" href="#">Read More...</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end blog section  -->
+
+    <!-- start contact section -->
+    <section class="py-5 contact-section" id="contact">
+        <div class="container">
+            <header class="header-of-every-sec mx-auto text-center">
+                <h2 class="font-Montserrat ">Our <span class="fw-bolder">Contact</span></h2>
+                <p>It is a long established fact that a reader will be of a page when established fact looking at its
+                    layout. </p>
+            </header>
+
+            <div class="row py-5">
+
+
+                <div class="col-12">
+
+                    <div class="row justify-content-center gy-2">
+
+                       <div class="col-md-6 col-lg-4 text-center" >
+                        <div class="card-contact">
+                            <h3 class="icon-card-contact my-2"><i class="fa-solid fa-mobile-screen-button fs-1"></i></h3>
+                            <h4 class="font-Montserrat">Call Us On</h4>
+                            <p><a class="text-decoration-none" href="tel:++985 123 7856">+985 123 7856</a></p>
+                        </div>
+                       </div>
+
+                       <div class="col-md-6 col-lg-4 text-center" >
+                        <div class="card-contact">
+                            <h3 class="icon-card-contact my-2"><i class="fa-solid fa-mobile-screen-button fs-1"></i></h3>
+                            <h4 class="font-Montserrat">Call Us On</h4>
+                            <p><a class="text-decoration-none" href="tel:++985 123 7856">+985 123 7856</a></p>
+                        </div>
+                       </div>
+
+                       <div class="col-md-6 col-lg-4 text-center" >
+                        <div class="card-contact">
+                            <h3 class="icon-card-contact my-2"><i class="fa-solid fa-mobile-screen-button fs-1"></i></h3>
+                            <h4 class="font-Montserrat">Call Us On</h4>
+                            <p><a class="text-decoration-none" href="tel:++985 123 7856">+985 123 7856</a></p>
+                        </div>
+                       </div>
+                    </div>
+                </div> 
+
+                <div class="col-12 mt-5">
+
+                    <form>
+                    <div class="row">
+
+                    <div class="col-md-6 mb-3">
+                            <input type="text" class="form-control py-2" id="Your name" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <input type="email" class="form-control py-2" id="Email" placeholder="Your Email" required>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <input type="text" class="form-control py-2" id="Your Subject" placeholder="Your Name">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <textarea class="form-control" id="Your Message" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+
+                    <div class="col-12 send-Message d-flex justify-content-end">
+                        <button type="submit" class="btn py-3">Send Message</button>
+                    </div>
+
+                    </div>
+                </form>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end contact section -->
+
+
+
+    <!-- start footer section -->
+        <footer class="py-5">
+            <div class="container">
+                <div class="icons-footer d-flex justify-content-evenly w-25 m-auto">
+                    <p class="m-0 rounded-circle"><i class="fa-brands fa-linkedin-in"></i></p>
+                    <p class="m-0 rounded-circle"><i class="fa-brands fa-facebook-f"></i></p>
+                    <p class="m-0 rounded-circle"><i class="fa-brands fa-twitter"></i></p>
+                    <p class="m-0 rounded-circle"><i class="fa-brands fa-instagram"></i></p>
+                </div>
+                <div class="footer-text pt-4">
+                    <h4 class="text-center">© Copyright <span>Kerri</span> All Rights Reserved</h4>
+                    <p class="text-center">Designed by BootstrapMade</p>
+                </div>
+            </div>
+        </footer>
+    <!-- end footer section -->
+
+
+
+    <!-- bootstrap js link  -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

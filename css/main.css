@@ -1,0 +1,509 @@
+/* start Global syle  */
+:root {
+  --main-color: rgb(230, 95, 120);
+  --body-color: rgba(255, 255, 255, 0.5);
+  --secound-color: #333333;
+  --white-color: white;
+  --black-color: black;
+  --header-color: rgb(33, 37, 41);
+  --bg-section: #f1f1f1;
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+.font-Montserrat {
+  font-family: "Montserrat", serif;
+}
+
+/* end Global syle  */
+
+/* start navbar */
+
+/* start condations  navbar */
+body:has(.nav-link.home.active) nav {
+  background-color: transparent;
+  backdrop-filter: blur(30px);
+}
+
+body:has(.nav-link.home.active) nav .nav-link {
+  color: var(--white-color);
+}
+body:has(.nav-link.home.active) nav .nav-link.active {
+  color: var(--main-color);
+}
+
+body:has(.nav-link.home.active) nav .navbar-brand {
+  color: white;
+}
+
+body:has(.nav-link.home.active) .navbar-nav .nav-link:hover {
+  color: var(--main-color);
+}
+
+/* start condations  navbar */
+
+nav {
+  background-color: var(--white-color);
+  transition: 0.3s ease all;
+}
+.navbar-nav .nav-link {
+  color: var(--secound-color);
+  transition: 0.3s color ease;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--main-color);
+}
+.navbar-nav .nav-link.active {
+  color: var(--main-color);
+  font-weight: 700;
+}
+.navbar-nav .nav-link span {
+  position: relative;
+}
+.navbar-nav .nav-link span::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--main-color);
+  transition: 0.3s ease all;
+}
+.navbar-nav .nav-link span:hover:after {
+  width: 90%;
+}
+.navbar-nav .nav-link.active span::after {
+  width: 100%;
+}
+/* end navbar */
+
+/* start header section  */
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../imgs/header-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.text-header p {
+  color: var(--body-color);
+  font-weight: 400;
+}
+.text-header h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.text-header h1 {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+.text-header h1 span::after {
+  content: "";
+  animation: typing 5s infinite;
+}
+@keyframes typing {
+  0% {
+    content: "";
+  }
+  1.96078431372549% {
+    content: "D";
+  }
+  3.92156862745098% {
+    content: "De";
+  }
+  5.88235294117647% {
+    content: "Dev";
+  }
+  7.84313725490196% {
+    content: "Deve";
+  }
+  9.80392156862745% {
+    content: "Devel";
+  }
+  11.7647058823529% {
+    content: "Develo";
+  }
+  13.7254901960784% {
+    content: "Develop";
+  }
+  15.6862745098039% {
+    content: "Developm";
+  }
+  17.6470588235294% {
+    content: "Developme";
+  }
+  19.6078431372549% {
+    content: "Developmen";
+  }
+  21.5686274509804% {
+    content: "Development ";
+  }
+  23.5294117647059% {
+    content: "Developmen";
+  }
+  25.4901960784314% {
+    content: "Developme";
+  }
+  27.4509803921569% {
+    content: "Developm";
+  }
+  29.4117647058824% {
+    content: "Develop";
+  }
+  31.3725490196078% {
+    content: "Develo";
+  }
+  33.3333333333333% {
+    content: "Devel";
+  }
+  35.2941176470588% {
+    content: "Deve";
+  }
+  37.2549019607843% {
+    content: "Dev";
+  }
+  39.2156862745098% {
+    content: "De";
+  }
+  41.1764705882353% {
+    content: "D";
+  }
+  43.1372549019608% {
+    content: "De";
+  }
+  45.0980392156863% {
+    content: "Dev";
+  }
+  47.0588235294118% {
+    content: "Deve";
+  }
+  49.0196078431373% {
+    content: "Devel";
+  }
+  50.9803921568627% {
+    content: "Develo";
+  }
+  52.9411764705882% {
+    content: "Develop";
+  }
+  54.9019607843137% {
+    content: "Develop";
+  }
+  56.8627450980392% {
+    content: "Developr";
+  }
+  58.8235294117647% {
+    content: "Develop";
+  }
+  60.7843137254902% {
+    content: "Develop";
+  }
+  62.7450980392157% {
+    content: "Develo";
+  }
+  64.7058823529412% {
+    content: "Devel";
+  }
+  66.6666666666667% {
+    content: "Deve";
+  }
+  68.6274509803921% {
+    content: "Dev";
+  }
+  70.5882352941176% {
+    content: "De";
+  }
+  72.5490196078431% {
+    content: "D";
+  }
+  74.5098039215686% {
+    content: "De";
+  }
+  76.4705882352941% {
+    content: "Des";
+  }
+  78.4313725490196% {
+    content: "Desi";
+  }
+  80.392156862745% {
+    content: "Desig";
+  }
+  82.3529411764705% {
+    content: "Design";
+  }
+  84.313725490196% {
+    content: "Designer";
+  }
+  86.2745098039215% {
+    content: "Designe";
+  }
+  88.235294117647% {
+    content: "Design";
+  }
+  90.1960784313725% {
+    content: "Desig";
+  }
+  92.1568627450979% {
+    content: "Desi";
+  }
+  94.1176470588234% {
+    content: "Des";
+  }
+  96.0784313725489% {
+    content: "De";
+  }
+  98.0392156862744% {
+    content: "D";
+  }
+}
+.scroll-header {
+  width: 60px;
+  height: 30px;
+  top: 83%;
+  left: 50%;
+  border: 2px solid white;
+  animation: scroll-move 3s infinite alternate;
+  transform: rotate(270deg) translate(-50%, -50%);
+}
+.scroll-header::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 3px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(30%, -50%);
+}
+@keyframes scroll-move {
+  0% {
+    top: 83%;
+  }
+  25% {
+    top: 85%;
+  }
+  50% {
+    top: 87%;
+  }
+  75% {
+    top: 85%;
+  }
+  100% {
+    top: 80%;
+  }
+}
+
+.spinner-header {
+  width: 35px;
+  top: 30%;
+  left: -4px;
+  background-color: var(--secound-color);
+}
+.spinner-header i {
+  color: white;
+}
+/* end header section  */
+
+/* start about section   */
+.header-about-text h3 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  span {
+    color: var(--main-color);
+    font-weight: 700;
+  }
+}
+.text-about > p {
+  font-size: 16px;
+  line-height: 1.5rem;
+  color: rgb(108, 117, 125);
+}
+.icons-about-sec p {
+  border: 2px solid #ccc;
+  transition: 0.3s all ease;
+}
+.icons-about-sec p:hover {
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+  cursor: pointer;
+}
+/* end about section   */
+
+/* start Client section  */
+.client-section {
+  background-color: var(--bg-section);
+}
+.header-of-every-sec {
+  width: 90%;
+}
+.header-of-every-sec p {
+  color: rgb(108, 117, 125);
+}
+.icon-slider i {
+  color: var(--main-color);
+}
+.slider-text {
+  width: 90%;
+}
+.slider-text p {
+  color: rgb(108, 117, 125);
+}
+.slider-text h5 {
+  font-size: 1rem;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: var(--main-color);
+  width: 34px;
+  height: 8px;
+  border-radius: 5px;
+}
+/* end Client section  */
+
+/* start portfolio section  */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: var(--white-color);
+  background-color: var(--main-color);
+}
+.nav-pills .nav-link {
+  color: #444;
+}
+
+.card-portfolio figcaption {
+  inset: 0;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  transition: 0.3s ease all;
+  opacity: 0;
+}
+.card-portfolio figure {
+  overflow: hidden;
+}
+.card-portfolio figure img {
+  transition: 0.3s ease all;
+}
+.card-portfolio:hover figure img {
+  transform: scale(1.2);
+}
+.card-portfolio .card-text {
+  top: 100%;
+  transition: 0.3s ease all;
+}
+.card-portfolio:hover .card-text {
+  top: 50%;
+}
+.card-portfolio:hover figcaption,
+.card-portfolio:hover .card-text {
+  opacity: 1;
+}
+/* end portfolio section  */
+
+/* start blog-section   */
+.blog-section {
+  background-color: var(--bg-section);
+}
+.card-body h4 {
+  font-size: 1.25rem;
+}
+.card-body h5 {
+  font-size: 1rem;
+  color: rgb(108, 117, 125);
+  span {
+    color: var(--main-color);
+  }
+}
+.card-body p {
+  font-size: 16px;
+  color: rgb(108, 117, 125);
+}
+
+.card-footer a {
+  color: rgb(108, 117, 125);
+}
+/* end blog-section   */
+
+/* start contact section   */
+.card-contact h3 i {
+  color: var(--main-color);
+}
+.card-contact p a {
+  color: rgb(108, 117, 125);
+}
+.card-contacth4 {
+  color: rgb(33, 37, 41);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.send-Message button {
+  background-color: var(--main-color);
+  color: white;
+}
+.send-Message button:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: var(--main-color);
+  outline: 0;
+  box-shadow: 0 0 0 0.1.25rem var(--main-color);
+}
+/* end contact section   */
+
+/* start footer section    */
+footer {
+  background-color: var(--header-color);
+}
+.icons-footer i {
+  color: var(--white-color);
+}
+.icons-footer p {
+  padding: 10px 15px;
+  cursor: pointer;
+  border: #333333 2px solid;
+  transition: 0.3s all ease;
+}
+.icons-footer p:hover {
+  color: var(--main-color);
+  border: var(--main-color) 2px solid;
+}
+.footer-text {
+  color: rgba(248, 249, 250, 0.5);
+}
+.footer-text h4 {
+  font-size: 1rem;
+  span {
+    color: var(--main-color);
+  }
+}
+/* end footer section    */
+
+/* start media  */
+
+@media screen and (min-width: 768px) {
+  .icons-footer {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .text-header h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+  .text-header h1 {
+    font-size: 4.0625rem;
+    font-weight: 500;
+  }
+  .header-of-every-sec {
+    width: 35%;
+  }
+  .slider-text {
+    width: 35%;
+  }
+}
+/* end media  */
